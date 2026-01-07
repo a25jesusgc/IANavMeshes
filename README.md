@@ -1,29 +1,7 @@
-# Descrición
+# Exercicio IA avanzada Nav Meshes
 
-Emprega este arquivo para describir os cambios do teu proxecto.
+Creei na ventana de Navigation un novo tipo de Agent chamado *Sphere*. 
 
-Utiliza o formato en markdown coas marcas básicas que aparcen no seguinte exemplo:
+Na escena FollowMouseClick, engadín un obxecto novo para o axente chamado *SphereAgent* co seu NavMeshAgent configurado e o tag IA para o AgentManager. 
 
-# Título principal
-## Subtítulo
-
-Texto normal con **negriña** e *cursiva*.
-
-- Lista 1
-- Lista 2
-
-[Ligazón](https://exemplo.com)
-
-
-```csharp
-using UnityEngine;
-
-public class OlaMundo : MonoBehaviour
-{
-    void Start()
-    {
-        Debug.Log("Ola, mundo desde C#!");
-    }
-}
-
-```
+Logo, engadín un novo NavMeshSurface para o Agent Type Sphere, pero creei un Obsexto fillo chamado SphereBlock cun NavMesh Modifier que só afecta aos Agents Sphere e que sobreescribe a area a *Not Walkable*, impedíndo así o paso do axente Sphere.
